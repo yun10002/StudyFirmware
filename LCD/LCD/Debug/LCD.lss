@@ -166,7 +166,7 @@ Disassembly of section .text:
   dc:	9a 95       	dec	r25
   de:	f1 f7       	brne	.-4      	; 0xdc <Lcd_Data+0x14>
   e0:	00 c0       	rjmp	.+0      	; 0xe2 <Lcd_Data+0x1a>
-  e2:	8b bb       	out	0x1b, r24	; 27
+  e2:	85 bb       	out	0x15, r24	; 21
   e4:	80 e1       	ldi	r24, 0x10	; 16
   e6:	8a 95       	dec	r24
   e8:	f1 f7       	brne	.-4      	; 0xe6 <Lcd_Data+0x1e>
@@ -190,7 +190,7 @@ Disassembly of section .text:
  108:	9a 95       	dec	r25
  10a:	f1 f7       	brne	.-4      	; 0x108 <Lcd_Cmd+0x14>
  10c:	00 c0       	rjmp	.+0      	; 0x10e <Lcd_Cmd+0x1a>
- 10e:	8b bb       	out	0x1b, r24	; 27
+ 10e:	85 bb       	out	0x15, r24	; 21
  110:	80 e1       	ldi	r24, 0x10	; 16
  112:	8a 95       	dec	r24
  114:	f1 f7       	brne	.-4      	; 0x112 <Lcd_Cmd+0x1e>

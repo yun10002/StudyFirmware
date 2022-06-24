@@ -37,7 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../uart3.c
+../usart.c
 
 
 PREPROCESSING_SRCS += 
@@ -47,16 +47,16 @@ ASM_SRCS +=
 
 
 OBJS +=  \
-uart3.o
+usart.o
 
 OBJS_AS_ARGS +=  \
-uart3.o
+usart.o
 
 C_DEPS +=  \
-uart3.d
+usart.d
 
 C_DEPS_AS_ARGS +=  \
-uart3.d
+usart.d
 
 OUTPUT_FILE_PATH +=UART.elf
 
@@ -72,7 +72,7 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
-./uart3.o: .././uart3.c
+./usart.o: .././usart.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=14745600  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega128a -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega128a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

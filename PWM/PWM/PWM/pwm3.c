@@ -4,7 +4,7 @@
  * Created: 2022-06-23 오전 11:09:37
  *  Author: pknu
  */ 
-/*키보드 입력값(1~8)에 따라 PIEZO 올리기*/
+/*키보드 입력값(1~8)에 따라 PIEZO 올리기(키패드로 피아노 연주)*/
 
 #define F_CPU 7372800UL
 #include <avr/io.h>

@@ -38,7 +38,7 @@
 	//
 	//Byte dan[16] = {0,};
 	//Byte gugu[16] = {0,};
-	//Byte gugudan[16] = {0,};
+	//Byte gugudan[16] = {
 //
 	//
 	//Lcd_Init();

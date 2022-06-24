@@ -2,5 +2,5 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-uart3.c
+usart.c
 
